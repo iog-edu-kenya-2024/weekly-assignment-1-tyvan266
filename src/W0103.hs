@@ -1,6 +1,6 @@
 module W0103 where
 
-data Tree a = Leaf a | Node (Tree a) (Tree a) deriving Show
+data Tree a = Leaf a | Node (Tree a) (Tree a) deriving (Show, Eq)
 
 splitleft :: Tree a -> (a, Maybe (Tree a))
 splitleft (Leaf a  ) = (a, Nothing)

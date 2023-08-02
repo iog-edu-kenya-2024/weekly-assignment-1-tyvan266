@@ -1,36 +1,33 @@
+cabal-version:       3.4
 name:                w01
-version:             0.1
-build-type:          Custom
-cabal-version:       >= 1.10
+version:             0.1.0.0
+build-type:          Simple
 extra-source-files:  README.md
 
-custom-setup
-  setup-depends:
-      base
-    , Cabal
-    , cabal-doctest >=1.0.6 && <1.1
+common common
+  build-depends:       base ^>= 4.16.4.0
+  ghc-options:         -Wall
 
 library
+  import:               common
   hs-source-dirs:       src
   Exposed-Modules:      W0101
                       , W0102
                       , W0103
                       , W0104
                       , W0107
-  build-depends:        base >= 4.7 && < 5
-                      , array
+  build-depends:        array
                       , containers
   default-language:     Haskell2010
   ghc-options:          -Wall
 
 executable w0106
+  import:              common
   hs-source-dirs:      app
   main-is:             W0106.hs
-  build-depends:       base >= 4.7 && < 5
-  ghc-options:         -Wall
-  default-language:    Haskell2010
 
 test-Suite w01-tests
+  import:               common
   type:                 exitcode-stdio-1.0
   main-is:              Spec.hs
   hs-source-dirs:       test
@@ -39,22 +36,16 @@ test-Suite w01-tests
                       , W0103Spec
                       , W0104Spec
                       , W0107Spec
-  Build-Depends:        base >= 4.7 && < 5
-                      , hspec
+  Build-Depends:        hspec
                       , QuickCheck
                       , w01
   build-tool-depends:   hspec-discover:hspec-discover
-  default-language:     Haskell2010
-  ghc-options:          -Wall
 
 test-suite w01-doctests
+  import:               common
   type:                 exitcode-stdio-1.0
   main-is:              doctests.hs
-  build-depends:
-                        base
-                      , base-compat      >= 0.10.5 && < 0.12
-                      , doctest          >= 0.15   && < 0.17
+  build-depends:        doctest       
                       , template-haskell
-  ghc-options:      -Wall -threaded
-  hs-source-dirs:   doctest
-  default-language: Haskell2010
+  hs-source-dirs:       doctest
+  ghc-options:          -threaded
