@@ -1,11 +1,11 @@
 
 # Weekly Assignments 1
 
-### To be submitted: Friday, 7 August 2020
+### To be submitted: ___
 
 Note that some tasks may deliberately ask you to look at concepts or libraries
 that we have not yet discussed in detail. But if you are in doubt about the
-scope of a task, by all means ask.
+scope of a task, by all means, ask.
 
 Please try to write high-quality code at all times!
 This means in particular that you should add comments to all parts
@@ -21,7 +21,7 @@ Use file `src/W0101.hs`.
 ## W1.2 Merge sort
 
 Implement merge sort in Haskell (on lists). The idea of merge sort is to split
-a list into two more or less equal parts, sort them recursively, and then merge
+a list into two more or less equal parts, sort them recursively and then merge
 two sorted lists using a dedicated merge function.
 
 Use file `src/W0102.hs`.
@@ -226,7 +226,7 @@ current total, and starts from the beginning.
 
 ### Subtask 1.7.4
 
-Instead of running a GP-program in the IO monad, we can also simulate the behaviour
+Instead of running a GP-program in the IO monad, we can also simulate the behavior
 of such a program by providing a (possibly infinite) list of input values. Write
 a function
 ```
