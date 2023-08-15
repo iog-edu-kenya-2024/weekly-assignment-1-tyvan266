@@ -2,10 +2,10 @@ module W0107Spec
     ( spec
     ) where
 
-import Test.Hspec
-import Test.QuickCheck
+import           Test.Hspec
+import           Test.QuickCheck
 
-import W0107
+import           W0107           (accum, add, simulate)
 
 spec :: Spec
 spec = do

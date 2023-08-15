@@ -4,10 +4,10 @@ module W0104Spec
     ( spec
     ) where
 
-import Test.Hspec
-import Test.QuickCheck
+import           Test.Hspec
+import           Test.QuickCheck
 
-import W0104
+import           W0104           (Trie)
 
 spec :: Spec
 spec = return () -- TODO: implement at least three tests

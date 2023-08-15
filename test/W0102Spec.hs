@@ -2,11 +2,11 @@ module W0102Spec
     ( spec
     ) where
 
-import qualified Data.List as L
+import qualified Data.List       as L
 import           Test.Hspec
 import           Test.QuickCheck
 
-import           W0102
+import           W0102           (merge, mergesort, split)
 
 spec :: Spec
 spec = do

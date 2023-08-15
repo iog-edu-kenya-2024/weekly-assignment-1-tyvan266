@@ -2,11 +2,11 @@ module W0101Spec
     ( spec
     ) where
 
-import qualified Data.List as L
+import qualified Data.List       as L
 import           Test.Hspec
 import           Test.QuickCheck
 
-import           W0101
+import           W0101           (permutations)
 
 spec :: Spec
 spec = do

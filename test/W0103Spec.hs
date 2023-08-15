@@ -4,10 +4,10 @@ module W0103Spec
     ( spec
     ) where
 
-import Test.Hspec
-import Test.QuickCheck
+import           Test.Hspec
+import           Test.QuickCheck
 
-import W0103
+import           W0103           (Tree (..), splitleft, splitleft')
 
 spec :: Spec
 spec = do
