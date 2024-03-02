@@ -59,3 +59,6 @@ RUN cabal update
 RUN echo "export PATH=$PATH:/root/.cabal/bin" >> ~/.bashrc
 
 RUN cabal install stylish-haskell
+
+# Add cabal to PATH
+RUN echo "export PATH=$PATH:/root/.local/bin" >> ~/.bashrc
