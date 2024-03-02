@@ -1,7 +1,7 @@
 
 # Weekly Assignments 1
 
-### To be submitted: ___
+### To be submitted: Thursday, March 14 2024
 
 Note that some tasks may deliberately ask you to look at concepts or libraries
 that we have not yet discussed in detail. But if you are in doubt about the
